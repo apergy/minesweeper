@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "name": "minesweeper",
+  "scripts": {
+    "start": "concurrently --kill-others-on-fail \"yarn workspace @minesweeper/api start\"  \"yarn workspace @minesweeper/ui start\""
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "concurrently": "5.2.0"
+  }
+}

@@ -1,0 +1,46 @@
+.game {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-areas: "grid players";
+  grid-template-columns: 1fr 150px;
+}
+
+.game__grid {
+  grid-area: "grid";
+}
+
+.game__grid table {
+  width: 100%;
+  height: 100%;
+}
+
+.game__grid table td {
+  border-right: solid 1px #ccc;
+  border-bottom: solid 1px #ccc;
+  background: #eee;
+}
+
+.game__grid table td.moved {
+  background: #fff;
+}
+
+.game__grid table td.mine {
+  background: red;
+}
+
+.game__grid table td button {
+  border: none;
+  background: none;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.game__players {
+  grid-area: "players";
+}
+
+.game__players .you {
+  background: yellow;
+}
